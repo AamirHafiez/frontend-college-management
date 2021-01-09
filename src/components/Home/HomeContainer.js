@@ -59,7 +59,7 @@ class HomeContainer extends React.Component {
     render() {
         const { showLogin } = this.state;
         return(
-            <div>
+            <div class="mb-5">
                 <div className="col-12 mt-2 mb-5">
                     <p className="" style={{fontSize: 50, textAlign: 'center', fontWeight: 'bold', color: '#5255AC'}}>My Classroom</p>
                 </div>
