@@ -1,0 +1,110 @@
+.sub-assign:hover > img{
+    animation-name: leftRight;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes leftRight {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-20px);
+    }
+}
+.up-assign:hover > img{
+    animation-name: rightLeft;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes rightLeft {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(20px);
+    }
+}
+.edit-profile{
+    transform: scale(0);
+    animation-name: popUp;
+    animation-fill-mode: forwards;
+    animation-duration: 0.4s;
+}
+@keyframes popUp{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.slide-from-left{
+    animation-name: slideFromLeft;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+@keyframes slideFromLeft{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.slide-from-right{
+    animation-name: slideFromRight;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+@keyframes slideFromRight{
+    from{
+        transform: translateX(1000px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.slide-to-down{
+    animation-name: slideDown;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+@keyframes slideDown{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(1000px);
+    }
+}
+.increase-height{
+    animation-name: increaseHeight;
+    animation-fill-mode: forwards;
+    animation-duration: 0.8s;
+    overflow: hidden;
+}
+@keyframes increaseHeight {
+    from{
+        max-height: 0;
+    }
+    to{
+        max-height: 1000px;
+    }
+}
+.decrease-height{
+    animation-name: decreaseHeight;
+    animation-fill-mode: forwards;
+    animation-duration: 0.28s;
+    overflow: hidden;
+}
+@keyframes decreaseHeight {
+    to{
+        max-height: 0;
+    }
+    from{
+        max-height: 1000px;
+    }
+}

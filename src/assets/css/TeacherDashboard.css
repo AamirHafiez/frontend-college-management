@@ -1,0 +1,83 @@
+.sub-assign:hover > img{
+    animation-name: leftRight;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes leftRight {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-20px);
+    }
+}
+.up-assign:hover > img{
+    animation-name: rightLeft;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes rightLeft {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(20px);
+    }
+}
+.edit-profile{
+    transform: scale(0);
+    animation-name: popUp;
+    animation-fill-mode: forwards;
+    animation-duration: 0.4s;
+}
+@keyframes popUp{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.icons > img {
+    transition: all 0.2s;
+}
+.icons:hover > img{
+    transform: scale(1.1);
+}
+
+.slide-down-bounce{
+    animation-name: slideDownBounce;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideDownBounce {
+    0%{
+        transform: translateY(-1000px);
+    }
+    40%{
+        transform: translateY(20px);
+    }
+    70%{
+        transform:  translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.slide-to-down{
+    animation-name: slideDown;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+@keyframes slideDown{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(1000px);
+    }
+}

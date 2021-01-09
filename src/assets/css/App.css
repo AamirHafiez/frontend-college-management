@@ -1,0 +1,16 @@
+.fade-in{
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  -moz-animation-name: fadeIn;
+  -moz-animation-duration: 0.8s;
+  animation-duration: 0.2s;
+  box-shadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.4);
+}
+@keyframes fadeIn{
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
